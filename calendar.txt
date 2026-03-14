@@ -1,0 +1,21 @@
+13 Month Roman Solar Calendar:
+
+I - Aprilis, 1st - Spring Equinox
+II - Maius
+III - Lunius
+IV - Quadtilis, 7th - Summer Solstice
+V - Quintilis
+VI - Sextilis, **** Every 4 Years Between The 14th & 15th Leap Day Occurs ****
+VII - September, 14th - Fall/Autumn Equinox
+VIII - October
+IX - November
+X - December, 21st - Winter Solstice
+XI - Undecember
+XII - Lanuarius
+XIII - Februarius
+- - The Day Out of Time/Renewal/"New Years Eve" - -
+
+- Each Month Has 28 Days (364 Days)
+- Years Starts On The Spring Equinox, Aprilis 1st, Sunday
+- The Day Out of Time, between Februarius 28th and Aprilis 1st
+**** Extra Day "Leap Year, Every 4 Years" Would Lay Between Sextilis 14th & 15th, 366 Days (Only if year is divisible by 4. Unless divisible by 100, skip it. Unless divisible by 400, keep it.) ****
