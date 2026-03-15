@@ -18,7 +18,7 @@
 const char *MONTH_NAMES[NUM_MONTHS] = {
     "Aprilis",    // I
     "Maius",      // II
-    "Lunius",     // III
+    "Iunius",     // III
     "Quadtilis",  // IV
     "Quintilis",  // V
     "Sextilis",   // VI   <- leap day between day 14 & 15
@@ -27,7 +27,7 @@ const char *MONTH_NAMES[NUM_MONTHS] = {
     "November",   // IX
     "December",   // X
     "Undecember", // XI
-    "Lanuarius",  // XII
+    "Ianuarius",  // XII
     "Februarius"  // XIII
 };
 
