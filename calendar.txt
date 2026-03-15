@@ -2,7 +2,7 @@
 
 I - Aprilis, 1st - Spring Equinox
 II - Maius
-III - Lunius
+III - Iunius
 IV - Quadtilis, 7th - Summer Solstice
 V - Quintilis
 VI - Sextilis, **** Every 4 Years Between The 14th & 15th Leap Day Occurs ****
@@ -11,7 +11,7 @@ VIII - October
 IX - November
 X - December, 21st - Winter Solstice
 XI - Undecember
-XII - Lanuarius
+XII - Ianuarius
 XIII - Februarius
 - - The Day Out of Time/Renewal/"New Years Eve" - -
 
