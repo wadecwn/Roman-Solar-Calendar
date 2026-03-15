@@ -25,20 +25,6 @@ cat > /var/www/calendar/index.html <<EOF
 <body>
     <h1 class="Title">13 Month - 28 Day Calendar "Roman Solar Calendar"</h1>
     <h2>Todays Date is: $DATE_OUTPUT</h2>
-
-    <table>
-        <tr>
-            <td>
-                test1
-            </td>
-        </tr>
-        <tr>
-            <td>
-                test 2
-            </td>
-        </tr>
-    </table>
-
     <h3>Roman Solar Calendar Info:</h3>
     <p class="Title">
         There are 28 days for each month.
@@ -73,7 +59,7 @@ cat > /var/www/calendar/index.html <<EOF
         - - The Day Out of Time/Renewal/"New Years Eve" - -
     </p>
 
-    <a href="https://github.com/" target="_blank">Github</a>
+    <a href="https://github.com/wadecwn/Roman-Solar-Calendar" target="_blank">Github</a>
 </body>
 
 </html>
