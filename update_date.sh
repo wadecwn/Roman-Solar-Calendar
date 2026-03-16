@@ -24,7 +24,7 @@ cat > /var/www/calendar/index.html <<EOF
     <body>
         <h1 class="Title">13 Month - 28 Day Calendar "Roman Solar Calendar"</h1>
         <h2>
-            Todays Date is:
+            Todays Date is: $DATE_OUTPUT
             <a
                 href="https://en.wikipedia.org/wiki/Pacific_Time_Zone"
                 target="_blank"
