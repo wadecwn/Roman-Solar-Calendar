@@ -4,70 +4,139 @@
 DATE_OUTPUT=$(/home/13monthcalendar/calendar)
 
 cat > /var/www/calendar/index.html <<EOF
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Roman Solar Calendar</title>
+        <style>
+            .Title {
+                font-weight: bold;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roman Solar Calendar</title>
-    <style>
-        .Title {
-            font-weight: bold;
-        }
+            .Tab {
+                margin-left: 20px;
+            }
+        </style>
+    </head>
 
-        .Tab {
-            margin-left: 20px;
-        }
-    </style>
-</head>
+    <body>
+        <h1 class="Title">13 Month - 28 Day Calendar "Roman Solar Calendar"</h1>
+        <h2>
+            Todays Date is:
+            <a
+                href="https://en.wikipedia.org/wiki/Pacific_Time_Zone"
+                target="_blank"
+                >(PDT)</a
+            >
+        </h2>
+        <h3>Roman Solar Calendar Info:</h3>
+        <p class="Title">There are 28 days for each month.</p>
+        <p class="Tab">
+            - Each month has 7 days, 4 weeks (Sun-Mon-Tue-Wed-Thr-Fri-Sat) each.
+            <br />
+            - Months start on Sunday and end on the 4th Saturday.<br />
+            - The First day of the Year (Aprilis 1st) is the Spring Equinox.
+            <br />
+            - The Last day of the Year (Day Out of Time/Day after Februarius
+            28th) falls out of the calendars range. <br />
+            - Leap Year occurs, following the rule stated
+            <a href="https://en.wikipedia.org/wiki/Leap_year" target="_blank"
+                >here.</a
+            >
+            The Leap Day falls in between Sextilis 14th & 15th, the middle of
+            the year, and is not recorded on the calendar.
+        </p>
+        <p class="Title">Months:</p>
+        <p class="Tab">
+            I -
+            <a href="https://en.wikipedia.org/wiki/Aprilis" target="_blank"
+                >Aprilis,</a
+            >
+            1st - Spring Equinox <br />
+            II -
+            <a href="https://en.wikipedia.org/wiki/Maius" target="_blank"
+                >Maius</a
+            >
+            <br />
+            III -
+            <a
+                href="https://en.wikipedia.org/wiki/Iunius_(month)"
+                target="_blank"
+                >Iunius</a
+            >
+            <br />
+            IV -
+            <a
+                href="https://en.wiktionary.org/wiki/quattuor#Latin"
+                target="_blank"
+                >Quartilis,</a
+            >
+            7th - Summer Solstice <br />
+            V -
+            <a href="https://en.wikipedia.org/wiki/Quintilis" target="_blank"
+                >Quintilis</a
+            >
+            <br />
+            VI -
+            <a href="https://en.wikipedia.org/wiki/Sextilis" target="_blank"
+                >Sextilis,</a
+            >
+            **** Every 4 Years Between The 14th & 15th, Leap Day Occurs ****
+            <br />
+            VII -
+            <a
+                href="https://en.wikipedia.org/wiki/September_(Roman_month)"
+                target="_blank"
+                >September,</a
+            >
+            14th - Fall/Autumn Equinox <br />
+            VIII -
+            <a
+                href="https://en.wikipedia.org/wiki/October_(Roman_month)"
+                target="_blank"
+                >October</a
+            >
+            <br />
+            IX -
+            <a
+                href="https://en.wikipedia.org/wiki/November_(Roman_month)"
+                target="_blank"
+                >November</a
+            >
+            <br />
+            X -
+            <a
+                href="https://en.wikipedia.org/wiki/December_(Roman_month)"
+                target="_blank"
+                >December,</a
+            >
+            21st - Winter Solstice <br />
+            XI -
+            <a href="https://en.wikipedia.org/wiki/Undecimber" target="_blank"
+                >Undecember</a
+            >
+            <br />
+            XII -
+            <a href="https://en.wikipedia.org/wiki/Ianuarius" target="_blank"
+                >Ianuarius</a
+            >
+            <br />
+            XIII -
+            <a href="https://en.wikipedia.org/wiki/Februarius" target="_blank"
+                >Februarius</a
+            >
+            <br />
+            - - The Day Out of Time/Renewal/"New Years Eve" - -
+        </p>
 
-<body>
-    <h1 class="Title">13 Month - 28 Day Calendar "Roman Solar Calendar"</h1>
-    <h2>Todays Date is: $DATE_OUTPUT <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time"
-            target="_blank">(UTC)</a>
-    </h2>
-    <h3>Roman Solar Calendar Info:</h3>
-    <p class="Title">
-        There are 28 days for each month.
-    </p>
-    <p class="Tab">
-        - Each month has 7 days, 4 weeks (Sun-Mon-Tue-Wed-Thr-Fri-Sat) each. <br>
-        - Months start on Sunday and end on the 4th Saturday.<br>
-        - The First day of the Year (Aprilis 1st) is the Spring Equinox. <br>
-        - The Last day of the Year (Day Out of Time/Day after Februarius 28th) falls out of the calendars range. <br>
-        - Leap Year occurs, following the rule stated <a href="https://en.wikipedia.org/wiki/Leap_year"
-            target="_blank">here.</a> The Leap Day falls in
-        between
-        Sextilis 14th & 15th, the middle of the year, and is not recorded on the calendar.
-    </p>
-    <p class="Title">
-        Months:
-    </p>
-    <p class="Tab">
-        I - <a href="https://en.wikipedia.org/wiki/Aprilis" target="_blank">Aprilis,</a> 1st - Spring Equinox <br>
-        II - <a href="https://en.wikipedia.org/wiki/Maius" target="_blank">Maius</a> <br>
-        III - <a href="https://en.wikipedia.org/wiki/Iunius_(month)" target="_blank">Iunius</a> <br>
-        IV - <a href="https://en.wiktionary.org/wiki/quattuor#Latin" target="_blank">Quartilis,</a> 7th - Summer
-        Solstice <br>
-        V - <a href="https://en.wikipedia.org/wiki/Quintilis" target="_blank">Quintilis</a> <br>
-        VI - <a href="https://en.wikipedia.org/wiki/Sextilis" target="_blank">Sextilis,</a> **** Every 4 Years Between
-        The 14th & 15th, Leap Day Occurs ****
-        <br>
-        VII - <a href="https://en.wikipedia.org/wiki/September_(Roman_month)" target="_blank">September,</a> 14th -
-        Fall/Autumn Equinox <br>
-        VIII - <a href="https://en.wikipedia.org/wiki/October_(Roman_month)" target="_blank">October</a> <br>
-        IX - <a href="https://en.wikipedia.org/wiki/November_(Roman_month)" target="_blank">November</a> <br>
-        X - <a href="https://en.wikipedia.org/wiki/December_(Roman_month)" target="_blank">December,</a> 21st - Winter
-        Solstice <br>
-        XI - <a href="https://en.wikipedia.org/wiki/Undecimber" target="_blank">Undecember</a> <br>
-        XII - <a href="https://en.wikipedia.org/wiki/Ianuarius" target="_blank">Ianuarius</a> <br>
-        XIII - <a href="https://en.wikipedia.org/wiki/Februarius" target="_blank">Februarius</a> <br>
-        - - The Day Out of Time/Renewal/"New Years Eve" - -
-    </p>
-
-    <a href="https://github.com/wadecwn/Roman-Solar-Calendar" target="_blank">Github</a>
-</body>
-
+        <a
+            href="https://github.com/wadecwn/Roman-Solar-Calendar"
+            target="_blank"
+            >Github</a
+        >
+    </body>
 </html>
+
 EOF
